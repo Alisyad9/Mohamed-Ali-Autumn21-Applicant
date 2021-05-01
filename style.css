@@ -11,3 +11,68 @@ html {
   font-size: 10px;
   font-family: 'Montserrat', 'sans-serif';
 }
+a {
+  text-decoration: none;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* my section */
+
+#hero {
+  background-image:url('/images/lemon_blue.jpg');
+  /* background-size: auto; */
+  /* background-size: cover; */
+  background-size: cover;
+
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+  
+
+}
+/* overlay., */
+#hero::after{
+  content:'';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100% ;
+  width:100%; 
+  background-color: black;
+  opacity: .6;
+  z-index: -1;
+
+}
+#hero h1{
+  display: block;
+  width: fit-content;
+  font-size: 4rem;
+  position: relative;
+  color: white;
+}
+#hero .cta{
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 15px 50px 30px; 
+  color: crimson;
+  background-color: transparent;
+  border: 1px dashed  crimson;
+  letter-spacing: 1rem;
+  margin: 30px;
+  transition: all .3s ease;
+  transition-property: background-color, color;
+}
+#hero .cta:hover {
+  background-color:crimson;
+  color:white;
+  font-weight: 70;
+}
+
+/* my section * /
