@@ -22,3 +22,4 @@ let name = [2, 'hello', 3];
 console.log('slice, splice and split');
 
 console.log(divideName('how are u doing'));
+console.log('asa');
