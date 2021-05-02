@@ -34,6 +34,7 @@ a {
   background-position: top center;
   position: relative;
   z-index: 1;
+  background-color: yellowgreen;
 }
 /* overlay., */
 #hero::after {
