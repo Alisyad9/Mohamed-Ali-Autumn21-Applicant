@@ -26,7 +26,7 @@ a {
 /* my section */
 
 #hero {
-  background-image:url('/images/lemon_blue.jpg');
+  background-image: url('/images/lemon_blue.jpg');
   /* background-size: auto; */
   /* background-size: cover; */
   background-size: cover;
@@ -34,45 +34,83 @@ a {
   background-position: top center;
   position: relative;
   z-index: 1;
-  
-
 }
 /* overlay., */
-#hero::after{
-  content:'';
+#hero::after {
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
-  height: 100% ;
-  width:100%; 
+  height: 100%;
+  width: 100%;
   background-color: black;
-  opacity: .6;
+  opacity: 0.6;
   z-index: -1;
-
 }
-#hero h1{
+#hero h1 {
   display: block;
   width: fit-content;
   font-size: 4rem;
   position: relative;
-  color: white;
+
+  color: transparent;
+  animation: show_text 1s ease forwards;
+  animation-delay: 1.5s;
 }
-#hero .cta{
+/* span color effect */
+#hero h1 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: crimson;
+  animation: show_text_box 1.5s ease;
+  animation-delay: 0.5s;
+  border-radius: 4px 20px 4px;
+}
+/* END span color effect */
+
+#hero .cta {
   display: inline-block;
   padding: 10px 20px;
-  border-radius: 15px 50px 30px; 
+  border-radius: 15px 50px 30px;
   color: crimson;
   background-color: transparent;
-  border: 1px dashed  crimson;
+  border: 1px dashed crimson;
   letter-spacing: 1rem;
   margin: 30px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   transition-property: background-color, color;
 }
 #hero .cta:hover {
-  background-color:crimson;
-  color:white;
+  background-color: crimson;
+  color: white;
   font-weight: 70;
 }
 
-/* my section * /
+/* END  my section * /
+
+
+
+
+
+
+/* span color effect keyframe */
+@keyframes show_text_box {
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@keyframes show_text {
+  100% {
+    color: white;
+  }
+}
+
+/* END span color effect keyframe */
