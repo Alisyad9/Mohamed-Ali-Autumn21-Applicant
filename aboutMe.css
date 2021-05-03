@@ -36,15 +36,17 @@
 }
 
 #allaboutme .aboutme-item {
-  flex-basis: 90%;
+  flex-basis: 80%;
+  display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  padding: 20px;
-  border-radius: 15px;
-  background-color: bisque;
+  padding: 30px;
+  border-radius: 10px;
+  /* background-color: bisque; */
   background-size: cover;
-  margin: 10px;
+  margin: 10px 5%;
+  /* color effect */
 
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
@@ -52,12 +54,13 @@
 }
 
 @keyframes gradient {
-  /* 0% {
+  0% {
     background-position: 10% 50%;
-  } */
+  }
 
   100% {
     background-position: 10% 20%;
   }
+  /* END color effect */
 }
 /* END about me section */
