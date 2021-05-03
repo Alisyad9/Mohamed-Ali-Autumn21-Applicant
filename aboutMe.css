@@ -58,9 +58,9 @@
     background-position: 10% 50%;
   }
 
-  100% {
-    background-position: 10% 20%;
-  }
+  /* 10% {
+    background-position: 10% 100%;
+  } */
   /* END color effect */
 }
 /* END about me section */
