@@ -26,13 +26,17 @@
 #allaboutme .aboutme-top p {
   font-size: 2rem;
   font-weight: 50;
+  justify-content: center;
+  padding: 30px;
 }
 
 #allaboutme .aboutme-bottom {
   display: flex;
   align-items: center;
-  justify-content: content;
+  flex-direction: row;
   flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
 }
 
 #allaboutme .aboutme-item {
