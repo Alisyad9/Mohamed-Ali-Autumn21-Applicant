@@ -1,12 +1,9 @@
-.slideshow-container {
+.slideshow-container mySlides {
   /* max-width: 1000px;
   position: relative;
   margin: auto; */
-
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: space-around;
-  justify-content: space-around;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
 }
