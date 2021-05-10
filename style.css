@@ -69,7 +69,6 @@ p {
   width: fit-content;
   font-size: 4rem;
   position: relative;
-
   color: transparent;
   animation: show_text 1s ease forwards;
   animation-delay: 1.5s;
@@ -97,7 +96,7 @@ p {
   border: 1px dashed crimson;
   letter-spacing: 1rem;
   margin: 30px;
-  transition: all 0.3s ease;
+  transition: all 1s ease;
   transition-property: background-color, color;
 }
 /* hover */
