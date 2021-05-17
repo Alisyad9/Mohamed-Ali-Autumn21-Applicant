@@ -40,7 +40,7 @@
 #navbar .nav-list ul {
   list-style: none;
   position: absolute;
-  background-color: rgba(2, 0, 12, 0.507);
+  background-color: rgba(2, 0, 12, 0.692);
   width: 100vw;
   height: 100vh;
   /* visibility */
@@ -69,17 +69,19 @@
   letter-spacing: 0.5rem;
   padding: 10px;
   margin: 20px 40px;
-  color: crimson;
+  /* color: crimson; */
+  color: white;
   text-transform: uppercase;
   display: block;
-  transition: all 2s ease;
+  transition: all 1s linear;
 }
 
 #navbar .nav-list ul li:hover a {
   border: 2px dashed white;
   border-radius: 15px 50px 30px;
-  background-color: rgba(255, 255, 255, 0.438);
-  color: crimson;
+  background-color: rgba(255, 255, 255, 0.671);
+  /* color: crimson; */
+  color: rgb(218, 25, 25);
 }
 #navbar .hamburger-bar {
   height: 65px;
