@@ -91,13 +91,14 @@ p {
   display: inline-block;
   padding: 10px 20px;
   border-radius: 15px 50px 30px;
-  color: crimson;
+  color: white;
   background-color: transparent;
-  border: 1px dashed crimson;
+  border: 2px dashed white;
   letter-spacing: 1rem;
   margin: 30px;
   transition: all 1s ease;
   transition-property: background-color, color;
+  font-size: 2rem;
 }
 /* hover */
 

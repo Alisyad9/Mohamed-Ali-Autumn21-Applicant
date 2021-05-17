@@ -10,8 +10,6 @@
   text-align: center;
 }
 
-#allaboutme {
-}
 #allaboutme .allaboutme {
   flex-direction: column;
   text-align: center;
@@ -37,6 +35,9 @@
   flex-wrap: wrap;
   align-content: space-around;
   justify-content: space-around;
+  max-width: 900px;
+  /* border: solid; */
+  margin: auto;
 }
 
 #allaboutme .aboutme-item {
@@ -49,10 +50,10 @@
   border-radius: 10px;
   /* background-color: bisque; */
   background-size: cover;
-  margin: 10px 5%;
+  margin: 20px;
   position: relative;
   z-index: 1;
-
+  max-width: 320px;
   /* color effect */
 
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -83,7 +84,7 @@
   margin-bottom: 20px;
 }
 
-#allaboutme .aboutme-item h2 {
+.aboutme-item h2 {
   font-size: 2rem;
   margin: 10px;
   color: white;
@@ -92,7 +93,7 @@
   font-size: 1rem;
   text-align: left;
   line-height: 1.5rem;
-  color: black;
+  color: wheat;
 } */
 /* END about me section */
 

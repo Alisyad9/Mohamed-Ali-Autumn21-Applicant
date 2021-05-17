@@ -1,0 +1,18 @@
+@media only screen and (min-width: 900px) {
+  /* about me button */
+
+  .cta {
+    font-size: 2rem;
+    padding: 20px 40px;
+  }
+  /* end about me button */
+
+  /* hero font size  */
+
+  #hero h1 {
+    font-size: 5rem;
+  }
+  /* end hero font size  */
+
+  /* End about me section  */
+}

@@ -10,5 +10,5 @@ main {
 ul {
   list-style-type: none;
   padding: 0;
-  border: 2px solid #c141f4;
+  /* border: 2px solid #c141f4; */
 }
