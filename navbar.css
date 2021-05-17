@@ -1,8 +1,13 @@
 .brand h1 {
-  font-size: 3rem;
+  font-size: 5rem;
   text-transform: uppercase;
-  color: #5e60e4;
+  color: #00bfff;
 }
+
+.brand h1 span {
+  color: #2f2faf;
+}
+
 #navbar {
   position: fixed;
   z-index: 110;
@@ -10,8 +15,8 @@
   top: 0;
   width: 100vw;
   height: auto;
-  /* background-color: crimson;
-  opacity: 0.3; */
+  background-color: rgba(0, 0, 0, 0.685);
+  /* opacity: 0.3; */
 }
 
 #navbar .header {
@@ -37,10 +42,12 @@
   background-color: rgba(2, 0, 12, 0.507);
   width: 100vw;
   height: 100vh;
-  /* left: 100%; */
+  /* visibility */
 
+  left: 100%;
+  /* visibility */
   top: 0;
-  left: 0;
+
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -48,6 +55,11 @@
   z-index: 1;
   overflow-x: hidden;
 }
+#navbar .nav-list ul.active {
+  left: 0;
+  transition: all 2s ease;
+}
+
 #navbar .nav-list ul a {
   font-size: 2.5rem;
   font-weight: 600;
@@ -65,4 +77,56 @@
   border-radius: 15px 50px 30px;
   background-color: rgba(255, 255, 255, 0.438);
   color: crimson;
+}
+#navbar .hamburger-bar {
+  height: 65px;
+  width: 65px;
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 100;
+}
+#navbar .hamburger-bar .bar {
+  height: 2px;
+  width: 30px;
+  padding: relative;
+  background-color: white;
+  z-index: -1;
+}
+#navbar .hamburger-bar .bar::after,
+#navbar .hamburger-bar .bar::before {
+  /* 
+  position: absolute;
+  height: 2px;
+  padding: relative;
+  margin-left: 15px;
+  align-items: center;
+  width: 20px;
+  left: 0; */
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 30px;
+
+  padding: relative;
+  background-color: white;
+  transition: 0.3s ease;
+  transition-property: top, bottom;
+}
+#navbar .hamburger-bar .bar::after {
+  top: 40px;
+}
+#navbar .hamburger-bar .bar::before {
+  bottom: 40px;
+}
+#navbar .hamburger-bar.active .bar::before {
+  bottom: 20px;
+}
+#navbar .hamburger-bar.active .bar::after {
+  top: 20px;
 }
