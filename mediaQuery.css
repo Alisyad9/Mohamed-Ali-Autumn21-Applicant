@@ -15,4 +15,8 @@
   /* end hero font size  */
 
   /* End about me section  */
+
+  .brand h1 {
+    font-size: 5rem;
+  }
 }
