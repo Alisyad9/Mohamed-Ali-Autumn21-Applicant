@@ -16,7 +16,7 @@
 
   /* End about me section  */
 
-  .brand h1 {
+  #navbar .brand h1 {
     font-size: 5rem;
   }
 }

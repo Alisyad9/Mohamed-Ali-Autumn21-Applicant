@@ -1,6 +1,6 @@
 #footer {
   /* background: #007cc7; */
-  background: linear-gradient(-45deg, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, #22b2eb8f, #dddddd75);
 }
 #footer .footer {
   min-height: 100px;
@@ -17,9 +17,6 @@
   color: white;
   letter-spacing: 0.1rem;
 }
-/* .brand h1 span {
-  color: crimson;
-} */
 
 #footer h2 {
   color: white;

@@ -1,11 +1,11 @@
 .brand h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   text-transform: uppercase;
   color: #00bfff;
 }
 
 .brand h1 span {
-  color: #2f2faf;
+  color: #ffffff;
 }
 
 #navbar {
@@ -15,8 +15,9 @@
   top: 0;
   width: 100vw;
   height: auto;
+  /* background-color: rgba(0, 0, 0, 0.685); */
+
   background-color: rgba(0, 0, 0, 0.685);
-  /* opacity: 0.3; */
 }
 
 #navbar .header {
