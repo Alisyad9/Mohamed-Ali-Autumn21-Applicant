@@ -14,9 +14,43 @@
   }
   /* end hero font size  */
 
-  /* End about me section  */
+ 
 
-  #navbar .brand h1 {
-    font-size: 5rem;
-  }
 }
+/* navBar */
+
+
+
+@media only screen and (min-width: 1450px) {
+  #navbar .brand h1 {
+    
+    display: none;
+  }
+
+  #navbar .navbar-class .hamburger-bar  {
+    display: none;
+    
+  }
+
+  #navbar .navbar-class .nav-list ul {
+    position: inherit;
+    display: block;
+    height: auto;
+    /* width: auto; */
+    /* width: fit-content; */
+    background-color: transparent;
+    /* transition:none; */
+  }
+  #navbar ul  li{
+    display: inline-table;
+    
+  }
+  /* #navbar .navbar-class .nav-list ul li a {
+    font-size: 1.8rem;
+  } */
+  /* #navbar .navbar-class .nav-list ul a:after {
+    display: none;
+  } */
+}
+/* End navBar *
+
