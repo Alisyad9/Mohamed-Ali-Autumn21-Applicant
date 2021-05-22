@@ -71,3 +71,12 @@ function showSlides() {
 
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+/////////////prompting user input
+
+function myPrompt() {
+  var person = prompt('enter name', 'for example Jimmy');
+  if (person != null) {
+    document.getElementById('personID').innerHTML =
+      'How are you doing ' + person + '!';
+  }
+}

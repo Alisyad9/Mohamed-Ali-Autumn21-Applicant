@@ -45,6 +45,9 @@
     display: inline-table;
     
   }
+  #navbar .nav-list ul a{
+    padding: 0;
+  }
   /* #navbar .navbar-class .nav-list ul li a {
     font-size: 1.8rem;
   } */
