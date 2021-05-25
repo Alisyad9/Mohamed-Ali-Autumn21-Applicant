@@ -15,6 +15,7 @@ hamburgerBar.addEventListener('click', () => {
 let carouselIndex = 0;
 const nextButton = document.querySelector('.next');
 const previousButton = document.querySelector('.previous');
+const pauseButton = document.querySelector('.pause');
 const carouselArray = [
   {imageSource: './images/flower.jpg', carouselText: 'flower'},
   {imageSource: './images/Lemon.jpg', carouselText: 'lemon'},
@@ -42,7 +43,15 @@ const next = () => {
 
   // carouselArray[carouselIndex];
 };
-setInterval(next, 5000); // Change image every 5 seconds
+
+//interval const variable
+const myInterval = setInterval(next, 1000); // Change image every 5 seconds
+
+const stopMyInterval = () => {
+  clearInterval(myInterval);
+  console.log('function: stop interval');
+};
+pauseButton.addEventListener('click', stopMyInterval);
 nextButton.addEventListener('click', next);
 
 // this function calls back on the privous slide
@@ -85,14 +94,11 @@ previousButton.addEventListener('click', back);
 // End carousel
 
 /////////////prompting user input
-
-function myPrompt() {
-  let person = prompt('enter name', 'for example Jimmy');
+const myPrompt = () => {
+  let person = prompt('Enter Name', 'for example Jimmy');
   if (person != null) {
-    document.getElementById('personID').innerHTML =
-      'How are you doing ' + person + '!';
+    document.getElementById(
+      'personID'
+    ).innerHTML = `How are you doing ${person}`;
   }
-}
-const greetingIteration = document.querySelector('#personID');
-
-document.getElementById('personID').style.color = 'blue';
+};
