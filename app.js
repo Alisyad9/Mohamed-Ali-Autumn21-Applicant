@@ -37,13 +37,12 @@ const next = () => {
 
   document.querySelector('.mycarousel img').src = nextImageSource;
   console.log('next ', carouselIndex);
-  setTimeout(next, 5000); // Change image every 5 seconds
 
   // console.log(carouselArray.length);
 
   // carouselArray[carouselIndex];
 };
-
+setInterval(next, 5000); // Change image every 5 seconds
 nextButton.addEventListener('click', next);
 
 // this function calls back on the privous slide

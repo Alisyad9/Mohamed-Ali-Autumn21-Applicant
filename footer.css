@@ -25,9 +25,13 @@
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 20px;
+
+  justify-content: center;
+  display: flex;
 }
 #footer .icon-item {
   display: flex;
+  justify-content: center;
 }
 
 #footer .item {
