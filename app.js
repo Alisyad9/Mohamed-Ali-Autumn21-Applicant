@@ -10,73 +10,88 @@ hamburgerBar.addEventListener('click', () => {
   mobileBar.classList.toggle('active');
 });
 
-// function divideName(array) {
-//   let result = array.split(' ');
-//   // console.log(result);
-//   // result.forEach((element) => {
-//   //   result.push(element);
-//   //   console.log(element);
-//   // });
-//   let count = 0;
-//   for (let i = 0; i < result.length; i++) {
-//     console.log(result[i]);
+// carousel
 
-//     if (result[i].length > count) {
-//       count = result[i].length;
-//     }
-//     return count;
-//   }
-//   console.log(count);
-//   return count;
-// }
-// let name = [2, 'hello', 3];
+let carouselIndex = 0;
+const nextButton = document.querySelector('.next');
+const previousButton = document.querySelector('.previous');
+const carouselArray = [
+  {imageSource: './images/flower.jpg', carouselText: 'flower'},
+  {imageSource: './images/Lemon.jpg', carouselText: 'lemon'},
+  {imageSource: './images/pear.jpg', carouselText: 'pear'},
+];
 
-// console.log('slice, splice and split');
+// this function calls next slide
+const next = () => {
+  if (carouselIndex === carouselArray.length - 1) {
+    // setting index to -1 so that next time when we click next we are incrementing carousalIndex to 0 and this will show the first element of the carouselArray.
+    carouselIndex = -1;
+  }
+  carouselIndex++;
+  const nextImageSource = carouselArray[carouselIndex].imageSource;
 
-// console.log(divideName('how are u doing'));
-// console.log('asa');
+  const getCarouselText = carouselArray[carouselIndex].carouselText;
 
-// var carouselIndex = 0;
-// carouselSlides();
+  document.querySelector('.mycarousel .carouselText').innerHTML =
+    getCarouselText;
 
-// function carouselSlides() {
-//   var carousel = document.getElementsByClassName('imageScrol');
-//   for (var i = 0; i < carousel.length; i++) {
-//     carousel[i].style.display = 'none';
+  document.querySelector('.mycarousel img').src = nextImageSource;
+  console.log('next ', carouselIndex);
+  setTimeout(next, 5000); // Change image every 2 seconds
+
+  // console.log(carouselArray.length);
+
+  // carouselArray[carouselIndex];
+};
+
+nextButton.addEventListener('click', next);
+
+// this function calls back on the privous slide
+
+const back = () => {
+  if (carouselIndex === 0) {
+    carouselIndex = carouselArray.length;
+  }
+
+  carouselIndex--;
+  const nextImageSource = carouselArray[carouselIndex].imageSource;
+
+  const getCarouselText = carouselArray[carouselIndex].carouselText;
+
+  document.querySelector('.mycarousel .carouselText').innerHTML =
+    getCarouselText;
+
+  document.querySelector('.mycarousel img').src = nextImageSource;
+  console.log('back ', carouselIndex);
+};
+previousButton.addEventListener('click', back);
+
+// const showCarousel = () => {
+//   let slides = document.getElementsByClassName('mycarousel');
+
+//   for (let i = 0; i < slides.length; i++) {
+//     slides[i].style.display = 'none';
 //   }
 //   carouselIndex++;
-//   if (carouselIndex > carousel.length) {
+//   if (carouselIndex > slides.length) {
 //     carouselIndex = 1;
 //   }
-//   carousel[carouselIndex - 1].style.display = 'block';
-//   setTimeout(carouselSlides, 3000);
-// }
 
-var slideIndex = 0;
-showSlides();
+//   slides[carouselIndex - 1].style.display = 'block';
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName('mySlides');
-
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none';
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-
-  slides[slideIndex - 1].style.display = 'block';
-
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
+//   // setTimeout(showCarousel, 2000); // Change image every 2 seconds
+// };
+// showCarousel();
+// End carousel
 /////////////prompting user input
 
 function myPrompt() {
-  var person = prompt('enter name', 'for example Jimmy');
+  let person = prompt('enter name', 'for example Jimmy');
   if (person != null) {
     document.getElementById('personID').innerHTML =
       'How are you doing ' + person + '!';
   }
 }
+const greetingIteration = document.querySelector('#personID');
+
+document.getElementById('personID').style.color = 'blue';

@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="mediaQuery.css" />
     <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="greeting.css" />
+    <link rel="stylesheet" href="javasection.css" />
 
     <!-- CSS style files  -->
     <title>My Website</title>
@@ -66,10 +68,14 @@
         <div class="aboutme-top">
           <h1 class="section-title">About <span>Me</span></h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
-            deleniti maiores pariatur assumenda quas magni et, doloribus quod
-            voluptate quasi molestiae magnam officiis dolorum, dolor provident
-            atque molestias voluptatum explicabo!
+            first html
+            <a
+              id="myWebSiteLink"
+              href="https://alisiyad9-gmail-com.trinket.io/sites/html-ea431550cf"
+              title="Go to my first HTML website"
+              target="_blank"
+              >website</a
+            >(Trinket by alisiyad9-gmail-com), only using HTML AND CSS.
           </p>
         </div>
 
@@ -93,7 +99,14 @@
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
               debitis rerum, magni voluptatem sed architecto placeat beatae
-              tenetur officia quod
+              tenetur officia quod lorem ipsum dolor sit amet consectetur lorem.
+              Lorem ips Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Corporis debitis rerum, magni voluptatem sed architecto placeat
+              beatae tenetur officia quod lorem ipsum dolor sit amet consectetur
+              lorem. Lorem ips Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Corporis debitis rerum, magni voluptatem sed
+              architecto placeat beatae tenetur officia quod lorem ipsum dolor
+              sit amet consectetur lorem. Lorem ips
             </p>
           </div>
           <div class="aboutme-item">
@@ -112,46 +125,22 @@
               <img src="./images/cat-footprint.png" />
             </div>
             <h2>Web</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-              debitis rerum, magni voluptatem sed architecto placeat beatae
-              tenetur officia quod
-            </p>
+            <p></p>
           </div>
         </div>
       </div>
     </section>
-    <!-- End About me section-->
 
-    <!-- JAVA SECTION-->
-
-    <!-- <section id="carousel">
-      <div class="mySlides">
-        <img src="./images/butterfly.jpg" alt="buterfly imange" style="width: 100%"/>
-      <div>
-
-      </div class="mySlides">
-      <img src="./images/flower.jpg" alt="flower image"style="width: 100%" />
-    </div>
-
-    </div class="mySlides">
-      <img src="./images/Lemon.jpg" alt="lemon"style="width: 100%" />
-    </div>
-    </section> -->
-
-    <div class="slideshow-container">
-      <div class="mySlides fade">
-        <img src="./images/flower.jpg" alt="flower image" style="width: 100%" />
+    <div class="carousel-container">
+      <div class="mycarousel">
+        <img src="./images/flower.jpg" alt="#" />
+        <div class="carouselText">flower</div>
       </div>
 
-      <div class="mySlides fade">
-        <img src="./images/Lemon.jpg" style="width: 100%" />
-      </div>
-
-      <div class="mySlides fade">
-        <img src="./images/pear.jpg" style="width: 100%" />
-      </div>
+      <div class="previous">&#10094;</div>
+      <div class="next">&#10095;</div>
     </div>
+    <!-- end carousel -->
     <!-- END JAVA SECTION-->
 
     <!-- main section  -->
@@ -183,10 +172,12 @@
       </form>
     </section>
 
-    <div class="button">
-      <button onclick="myPrompt()">Press me!</button>
-      <p id="personID">hello</p>
-    </div>
+    <section id="greeting">
+      <div class="container">
+        <button class="button" onclick="myPrompt()">Press me!</button>
+        <p id="personID">hello</p>
+      </div>
+    </section>
     <!-- END main section  -->
 
     <!-- footer section -->
@@ -197,18 +188,30 @@
 
         <div class="icon-item">
           <div class="item">
-            <a href="#">
+            <a href="#" target="_blank">
               <img src="./images/iconfinder_github_3325136.png" alt="github" />
             </a>
           </div>
           <div class="item">
-            <a href="#">
-              <img src="./images/iconfinder_codewars_4691329.png" alt="" />
+            <a
+              href="https://www.codewars.com/users/mohamed%20Ali%20%20siyad"
+              target="_blank"
+            >
+              <img
+                src="./images/iconfinder_codewars_4691329.png"
+                alt="codewars"
+              />
             </a>
           </div>
           <div class="item">
-            <a href="#">
-              <img src="./images/iconfinder_freecodecamp_4691243.png" alt="" />
+            <a
+              href="https://www.freecodecamp.org/mohamed-ali-siyad"
+              target="_blank"
+            >
+              <img
+                src="./images/iconfinder_freecodecamp_4691243.png"
+                alt="freecodecamp"
+              />
             </a>
           </div>
         </div>

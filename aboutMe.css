@@ -1,5 +1,17 @@
 /* about me section */
 
+#myWebSiteLink {
+  color: crimson;
+  font-weight: 900;
+  font-weight: bold;
+}
+#myWebSiteLink:hover {
+  color: #2f2faf;
+  /* color: var(--textColorStandard); */
+
+  transition: color 1s ease;
+}
+
 #allaboutme .section-title {
   font-size: 5rem;
   font-weight: 100p;

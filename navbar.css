@@ -103,14 +103,14 @@
 }
 #navbar .hamburger-bar .bar::after,
 #navbar .hamburger-bar .bar::before {
-  /* 
-  position: absolute;
+  /* position: absolute;
   height: 2px;
   padding: relative;
   margin-left: 15px;
   align-items: center;
   width: 20px;
   left: 0; */
+
   content: '';
   position: absolute;
   height: 2px;
