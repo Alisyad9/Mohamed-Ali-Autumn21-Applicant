@@ -37,7 +37,7 @@ const next = () => {
 
   document.querySelector('.mycarousel img').src = nextImageSource;
   console.log('next ', carouselIndex);
-  setTimeout(next, 5000); // Change image every 2 seconds
+  setTimeout(next, 5000); // Change image every 5 seconds
 
   // console.log(carouselArray.length);
 
@@ -63,6 +63,7 @@ const back = () => {
 
   document.querySelector('.mycarousel img').src = nextImageSource;
   console.log('back ', carouselIndex);
+  // setTimeout(back, 5000); // Change image every 5 seconds
 };
 previousButton.addEventListener('click', back);
 
