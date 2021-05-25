@@ -83,6 +83,7 @@ previousButton.addEventListener('click', back);
 // };
 // showCarousel();
 // End carousel
+
 /////////////prompting user input
 
 function myPrompt() {
