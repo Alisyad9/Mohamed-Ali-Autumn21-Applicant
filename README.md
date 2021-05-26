@@ -1,6 +1,6 @@
 # Mohamed-Ali-FAC21-Applicant
 
-Hello Dear Reader 
+Hello, Dear Reader 
 
 This is my website application for the Founders and Coders Autumn 2021 cohort using vanilla JavaScript, CSS and HTML.
 
