@@ -32,27 +32,26 @@ const next = () => {
   const nextImageSource = carouselArray[carouselIndex].imageSource;
 
   const getCarouselText = carouselArray[carouselIndex].carouselText;
+  //assigning to the class of my carousel
+  document.querySelector('.mycarousel img').src = nextImageSource;
+  console.log('next ', carouselIndex);
 
   document.querySelector('.mycarousel .carouselText').innerHTML =
     getCarouselText;
-
-  document.querySelector('.mycarousel img').src = nextImageSource;
-  console.log('next ', carouselIndex);
 
   // console.log(carouselArray.length);
 
   // carouselArray[carouselIndex];
 };
-
+nextButton.addEventListener('click', next);
 //interval const variable
-const myInterval = setInterval(next, 1000); // Change image every 5 seconds
+const myInterval = setInterval(next, 1000); // Change image every 1 seconds
 
 const stopMyInterval = () => {
   clearInterval(myInterval);
   console.log('function: stop interval');
 };
 pauseButton.addEventListener('click', stopMyInterval);
-nextButton.addEventListener('click', next);
 
 // this function calls back on the privous slide
 
@@ -95,10 +94,12 @@ previousButton.addEventListener('click', back);
 
 /////////////prompting user input
 const myPrompt = () => {
-  let person = prompt('Enter Name', 'for example Jimmy');
-  if (person != null) {
+  let personName = prompt('Enter Name', 'for example Jimmy');
+
+  if (personName != null) {
     document.getElementById(
       'personID'
-    ).innerHTML = `How are you doing ${person}`;
+    ).innerHTML = `How are you doing ${personName}`;
+    personName.style.color = 'red';
   }
 };

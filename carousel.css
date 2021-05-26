@@ -26,15 +26,21 @@
 .next {
   right: 0;
 }
-.pause {
-  left: 50%;
-  margin-left: -33.575px;
-}
+
 .previous:hover,
 .next:hover {
   background-color: #00bfff71;
 }
 
+.pause {
+  left: 50%;
+  margin-left: -33.575px;
+  color: transparent;
+}
+.pause:hover {
+  color: white;
+  transition: 0.5s ease;
+}
 /* End carouselSlides */
 
 /* carouselText */
