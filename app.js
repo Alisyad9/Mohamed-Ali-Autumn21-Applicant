@@ -21,10 +21,13 @@ const carouselArray = [
     imageSource: './images/flower-unsplash.jpg',
     carouselText: 'flower',
   },
-  {imageSource: './images/pear.jpg', carouselText: 'pear'},
-  {imageSource: './images/palace.jpg', carouselText: 'palace'},
+  {imageSource: './images/swans.jpg', carouselText: 'Swans'},
+  {imageSource: './images/palace.jpg', carouselText: 'Palace'},
   {imageSource: './images/dessert1080.jpg', carouselText: 'Dessert'},
   {imageSource: './images/Sunset.jpg', carouselText: 'Sunset'},
+  {imageSource: './images/night.jpg', carouselText: 'Night-park'},
+  {imageSource: './images/mimi.jpg', carouselText: 'Mimi'},
+  {imageSource: './images/lightshow.jpg', carouselText: 'Light-show'},
 ];
 
 // this function calls next slide
@@ -50,7 +53,7 @@ const next = () => {
 };
 nextButton.addEventListener('click', next);
 //interval const variable
-const myInterval = setInterval(next, 2000); // Change image every 2 seconds
+const myInterval = setInterval(next, 3000); // Change image every 3 seconds
 
 const stopMyInterval = () => {
   clearInterval(myInterval);
@@ -104,7 +107,7 @@ const myPrompt = () => {
   if (personName != null) {
     document.getElementById(
       'personID'
-    ).innerHTML = `How are you doing ${personName}`;
+    ).innerHTML = `Thank you ${personName}! for reading through my website`;
     personName.style.color = 'red';
   }
 };

@@ -1,6 +1,7 @@
 #footer {
   /* background: #007cc7; */
-  background: linear-gradient(-45deg, #22b2eb8f, #dddddd75);
+  /* background: linear-gradient(-45deg, #22b2eb8f, #dddddd75); */
+  background: linear-gradient(-45deg, #008cff, #dddddd75);
 }
 #footer .footer {
   min-height: 100px;
@@ -47,4 +48,9 @@
 
 #footer .item:hover img {
   filter: blur(0px);
+}
+#footer a:hover {
+  color: crimson;
+  font-weight: bold;
+  transition: color 1s ease;
 }
