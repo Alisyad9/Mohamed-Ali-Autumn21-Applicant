@@ -37,10 +37,12 @@
   margin-left: -33.575px;
   color: transparent;
 }
-.pause:hover {
+.pause:hover,
+.pause:active {
   color: white;
-  transition: 0.5s ease;
+  transition: 0.8s ease;
 }
+
 /* End carouselSlides */
 
 /* carouselText */

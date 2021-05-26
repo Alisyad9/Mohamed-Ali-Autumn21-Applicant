@@ -17,9 +17,14 @@ const nextButton = document.querySelector('.next');
 const previousButton = document.querySelector('.previous');
 const pauseButton = document.querySelector('.pause');
 const carouselArray = [
-  {imageSource: './images/flower.jpg', carouselText: 'flower'},
-  {imageSource: './images/Lemon.jpg', carouselText: 'lemon'},
+  {
+    imageSource: './images/flower-unsplash.jpg',
+    carouselText: 'flower',
+  },
   {imageSource: './images/pear.jpg', carouselText: 'pear'},
+  {imageSource: './images/palace.jpg', carouselText: 'palace'},
+  {imageSource: './images/dessert1080.jpg', carouselText: 'Dessert'},
+  {imageSource: './images/Sunset.jpg', carouselText: 'Sunset'},
 ];
 
 // this function calls next slide
@@ -45,7 +50,7 @@ const next = () => {
 };
 nextButton.addEventListener('click', next);
 //interval const variable
-const myInterval = setInterval(next, 1000); // Change image every 1 seconds
+const myInterval = setInterval(next, 2000); // Change image every 2 seconds
 
 const stopMyInterval = () => {
   clearInterval(myInterval);
