@@ -1,3 +1,5 @@
+/* navbar section */
+
 .brand h1 {
   font-size: 3rem;
   text-transform: uppercase;
@@ -16,16 +18,12 @@
   top: 0;
   width: 100vw;
   height: auto;
-  /* background-color: rgba(0, 0, 0, 0.685); */
 
   background-color: rgba(0, 0, 0, 0.685);
 }
 
 #navbar .header {
   min-height: 8vh;
-  /* background-color: transparent; */
-  /* opacity: 0.3; */
-  /* z-index: -1000; */
 }
 
 #navbar .navbar-class {
@@ -56,10 +54,6 @@
   transition: all 2s ease;
   justify-content: center;
 }
-#navbar .nav-list ul.active {
-  left: 0;
-  transition: all 1s ease;
-}
 
 #navbar .nav-list ul a {
   font-size: 2.5rem;
@@ -73,7 +67,10 @@
   display: block;
   transition: all 1s linear;
 }
-
+#navbar .nav-list ul.active {
+  left: 0;
+  transition: all 1s ease;
+}
 #navbar .nav-list ul li:hover a {
   border: 2px dashed white;
   border-radius: 15px 50px 30px;
@@ -101,16 +98,9 @@
   background-color: white;
   z-index: -1;
 }
+
 #navbar .hamburger-bar .bar::after,
 #navbar .hamburger-bar .bar::before {
-  /* position: absolute;
-  height: 2px;
-  padding: relative;
-  margin-left: 15px;
-  align-items: center;
-  width: 20px;
-  left: 0; */
-
   content: '';
   position: absolute;
   height: 2px;
@@ -133,3 +123,4 @@
 #navbar .hamburger-bar.active .bar::after {
   top: 20px;
 }
+/* End navbar section */
