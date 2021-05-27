@@ -17,8 +17,6 @@ const nextButton = document.querySelector('.next');
 const previousButton = document.querySelector('.previous');
 const pauseButton = document.querySelector('.pause');
 
-// const playbutton = document.querySelector('.play');
-
 const carouselArray = [
   {imageSource: './images/spring.jpg', carouselText: 'Spring'},
   {imageSource: './images/swans.jpg', carouselText: 'Swans'},
@@ -56,12 +54,6 @@ nextButton.addEventListener('click', next);
 //interval const variable
 
 const myInterval = setInterval(next, 3000); // Change image every 3 seconds
-// const startMyInterval = () => {
-//   setInterval(next, 3000);
-
-//   console.log('function: start interval');
-// };
-// playbutton.addEventListener('click', startMyInterval);
 
 //Stop my interval method
 
@@ -92,24 +84,6 @@ const back = () => {
   // setTimeout(back, 5000); // Change image every 5 seconds
 };
 previousButton.addEventListener('click', back);
-
-// const showCarousel = () => {
-//   let slides = document.getElementsByClassName('mycarousel');
-
-//   for (let i = 0; i < slides.length; i++) {
-//     slides[i].style.display = 'none';
-//   }
-//   carouselIndex++;
-//   if (carouselIndex > slides.length) {
-//     carouselIndex = 1;
-//   }
-
-//   slides[carouselIndex - 1].style.display = 'block';
-
-//   // setTimeout(showCarousel, 2000); // Change image every 2 seconds
-// };
-// showCarousel();
-// End carousel
 
 /////////////prompting user input
 const myPrompt = () => {
