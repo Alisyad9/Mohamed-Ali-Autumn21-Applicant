@@ -16,11 +16,11 @@ let carouselIndex = 0;
 const nextButton = document.querySelector('.next');
 const previousButton = document.querySelector('.previous');
 const pauseButton = document.querySelector('.pause');
+
+const playbutton = document.querySelector('.play');
+
 const carouselArray = [
-  {
-    imageSource: './images/flower-unsplash.jpg',
-    carouselText: 'flower',
-  },
+  {imageSource: './images/spring.jpg', carouselText: 'Spring'},
   {imageSource: './images/swans.jpg', carouselText: 'Swans'},
   {imageSource: './images/palace.jpg', carouselText: 'Palace'},
   {imageSource: './images/dessert1080.jpg', carouselText: 'Dessert'},
@@ -51,12 +51,23 @@ const next = () => {
 
   // carouselArray[carouselIndex];
 };
+
 nextButton.addEventListener('click', next);
 //interval const variable
-const myInterval = setInterval(next, 3000); // Change image every 3 seconds
+
+// const myInterval = setInterval(next, 3000); // Change image every 3 seconds
+const startMyInterval = () => {
+  setInterval(next, 3000);
+
+  console.log('function: start interval');
+};
+playbutton.addEventListener('click', startMyInterval);
+
+//Stop my interval method
 
 const stopMyInterval = () => {
-  clearInterval(myInterval);
+  // clearInterval(myInterval);
+  clearInterval(startMyInterval);
   console.log('function: stop interval');
 };
 pauseButton.addEventListener('click', stopMyInterval);
@@ -108,6 +119,5 @@ const myPrompt = () => {
     document.getElementById(
       'personID'
     ).innerHTML = `Thank you ${personName}! for reading through my website`;
-    personName.style.color = 'red';
   }
 };
