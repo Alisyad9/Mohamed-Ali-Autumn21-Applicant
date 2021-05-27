@@ -17,7 +17,7 @@ const nextButton = document.querySelector('.next');
 const previousButton = document.querySelector('.previous');
 const pauseButton = document.querySelector('.pause');
 
-const playbutton = document.querySelector('.play');
+// const playbutton = document.querySelector('.play');
 
 const carouselArray = [
   {imageSource: './images/spring.jpg', carouselText: 'Spring'},
@@ -55,19 +55,19 @@ const next = () => {
 nextButton.addEventListener('click', next);
 //interval const variable
 
-// const myInterval = setInterval(next, 3000); // Change image every 3 seconds
-const startMyInterval = () => {
-  setInterval(next, 3000);
+const myInterval = setInterval(next, 3000); // Change image every 3 seconds
+// const startMyInterval = () => {
+//   setInterval(next, 3000);
 
-  console.log('function: start interval');
-};
-playbutton.addEventListener('click', startMyInterval);
+//   console.log('function: start interval');
+// };
+// playbutton.addEventListener('click', startMyInterval);
 
 //Stop my interval method
 
 const stopMyInterval = () => {
-  // clearInterval(myInterval);
-  clearInterval(startMyInterval);
+  clearInterval(myInterval);
+
   console.log('function: stop interval');
 };
 pauseButton.addEventListener('click', stopMyInterval);
