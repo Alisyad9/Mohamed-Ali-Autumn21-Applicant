@@ -1,22 +1,18 @@
 /* about me section */
 
-/* website link style and a tag/h2 */
+/* website link style and h2 */
 
 #myWebSiteLink {
   color: crimson;
   font-weight: 900;
   font-weight: bold;
 }
-#myWebSiteLink:hover,
-.aboutme-top p a:hover {
+#myWebSiteLink:hover {
   color: #2f2faf;
   cursor: pointer;
   transition: color 1s ease;
 }
-.aboutme-top p a {
-  color: black;
-  font-weight: bold;
-}
+
 .aboutme-item h2 {
   font-size: 2rem;
   margin: 10px;
@@ -24,6 +20,7 @@
 }
 /* end website link style and a tag/h2 */
 
+/* .section-title style */
 #allaboutme .section-title {
   font-size: 5rem;
   font-weight: 100p;

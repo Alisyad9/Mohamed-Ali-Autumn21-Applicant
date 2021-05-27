@@ -1,3 +1,5 @@
+/* greeting section  */
+
 #greeting {
   padding: 100px 0;
 }
@@ -31,3 +33,4 @@
   background-color: #00bfff;
   transition: background-color 1s ease;
 }
+/* End greeting section  */

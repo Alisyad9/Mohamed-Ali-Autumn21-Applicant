@@ -1,3 +1,5 @@
+/* Media query section  */
+
 @media only screen and (min-width: 900px) {
   /* about me button */
 
@@ -13,49 +15,33 @@
     font-size: 5rem;
   }
   /* end hero font size  */
-
- 
-
 }
-
-
 
 /* navBar */
 
-
 @media only screen and (min-width: 1250px) {
   #navbar .brand h1 {
-    
     display: none;
   }
 
-  #navbar .navbar-class .hamburger-bar  {
+  #navbar .navbar-class .hamburger-bar {
     display: none;
-    
   }
 
   #navbar .navbar-class .nav-list ul {
     position: inherit;
     display: block;
     height: auto;
-    /* width: auto; */
-    /* width: fit-content; */
+
     background-color: transparent;
-    /* transition:none; */
   }
-  #navbar ul  li{
+  #navbar ul li {
     display: inline-table;
-    
   }
-  #navbar .nav-list ul a{
+  #navbar .nav-list ul a {
     padding: 0;
   }
-  /* #navbar .navbar-class .nav-list ul li a {
-    font-size: 1.8rem;
-  } */
-  /* #navbar .navbar-class .nav-list ul a:after {
-    display: none;
-  } */
 }
 /* End navBar *
 
+/* End Media query section  */

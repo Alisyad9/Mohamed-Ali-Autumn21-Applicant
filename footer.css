@@ -1,6 +1,6 @@
+/* footer section styling  */
+
 #footer {
-  /* background: #007cc7; */
-  /* background: linear-gradient(-45deg, #22b2eb8f, #dddddd75); */
   background: linear-gradient(-45deg, #008cff, #dddddd75);
 }
 #footer .footer {
@@ -54,3 +54,4 @@
   font-weight: bold;
   transition: color 1s ease;
 }
+/*  End footer section styling  */
