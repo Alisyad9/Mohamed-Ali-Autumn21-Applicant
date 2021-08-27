@@ -92,6 +92,6 @@ const myPrompt = () => {
   if (personName != null) {
     document.getElementById(
       'personID'
-    ).innerHTML = ` ${personName}! for reading through my website`;
+    ).innerHTML = ` ${personName}! thank you for reading through my website`;
   }
 };
